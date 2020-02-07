@@ -1,0 +1,17 @@
+<apex:page controller="ActionFunctionExample">
+  <apex:form id="af">
+  <apex:pageBlock id="pb" rendered="{!acc3}">
+  <apex:pageBlockTable id="pbt" value="{!acc}" var="acc1" >
+    <apex:column headerValue="Id"><apex:outputLink value="/{!acc1.id}"> {!acc1.id}</apex:outputLink></apex:column>
+    <apex:column value="{!acc1.name}" />
+  </apex:pageBlockTable>
+   </apex:pageBlock>
+  <apex:actionFunction name="abc1" action="{!abc}" reRender="af"/>
+  <a onclick="abc()">click this!!!!</a>
+  </apex:form>  
+<script>
+  function abc(){
+     abc1();
+  }
+</script>  
+</apex:page>

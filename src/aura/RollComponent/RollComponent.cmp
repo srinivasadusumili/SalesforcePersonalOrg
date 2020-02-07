@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:select name="selectItem" label="Select an item" onchange="{!c.doSomething}">
+        <option value="">Role1</option>
+        <option value="">Role2</option>
+        <option value="">Role3</option>
+        <option value="">Role4</option>
+        <option value="">Role5</option>
+        <option value="">Role6</option>
+        <option value="">Role7</option>
+        <option value="">Role8</option>
+        <option value="">Role9</option>
+        <option value="">Role10</option>
+    </lightning:select>
+     <lightning:button label="Save" title="Save" onclick="{! c.handleClick }"/>
+</aura:component>

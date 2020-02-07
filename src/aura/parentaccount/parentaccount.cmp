@@ -1,0 +1,9 @@
+<aura:component controller="Addaccount">
+	<aura:attribute name="items" type="Account[]"/>
+     
+    <aura:handler name="addaccount" event="c:addaccountevent" action="{!c.handleAddaccount }"></aura:handler>
+    <div class="slds-col slds-col--padded slds-p-top--large">
+       <c:childaccount />
+         </div>
+    
+</aura:component>

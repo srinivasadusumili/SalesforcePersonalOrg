@@ -1,0 +1,10 @@
+<apex:page showHeader="false" sidebar="False" controller="textInputsCon">
+
+<apex:form >
+
+   Input Text1 <apex:inputText value="{!inputText1}"/>
+   Input Text2 <apex:inputText value="{!inputText2}"/>
+
+    
+</apex:form>
+</apex:page>

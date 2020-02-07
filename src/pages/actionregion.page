@@ -1,0 +1,28 @@
+<apex:page controller="actionregion">
+    <apex:form >
+        <apex:pageMessages id="errors" />
+        <apex:pageBlock >
+        <apex:pageBlockSection title="Accounts" id="input">
+            <!--<apex:inputField value="{!acc.Industry}" required="true"/>-->
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account" for="n"/> 
+           <apex:actionRegion >
+            <apex:inputField value="{!acc.Name}" id="n" >
+                <apex:actionSupport action="{!Click}" rerender="input,errors,output" event="onchange"/>
+            </apex:inputField>
+            </apex:actionRegion>
+            </apex:pageBlockSectionItem>
+            <apex:actionRegion >
+            <apex:inputField value="{!acc.Industry}" required="true">
+                <apex:actionSupport action="{!Click}" rerender="input,errors,output" event="onchange"/></apex:inputField>
+            </apex:actionRegion>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="output">
+                AccountName:<apex:outputText value="{!AccountName}"/><br/>
+                AccountIndustry:<apex:outputText value="{!AccountIndustry}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

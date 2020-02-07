@@ -1,0 +1,4 @@
+<aura:component >
+    <c:exploreComponentSender></c:exploreComponentSender>
+    <aura:handler name="cmpEvent" event="c:cmpEvent" action="{!c.handle}"/>
+</aura:component>

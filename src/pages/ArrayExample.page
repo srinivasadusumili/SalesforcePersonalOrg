@@ -1,0 +1,10 @@
+<apex:page controller="ArrayExample" >
+    <apex:pageBlock >
+    <apex:pageBlocktable value="{!myval}" var="a">
+        <apex:column value="{!a.name}" />
+        <apex:column value="{!a.industry}"/>
+        </apex:pageBlocktable>
+    
+    </apex:pageBlock>
+    
+</apex:page>

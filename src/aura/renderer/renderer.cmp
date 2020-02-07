@@ -1,0 +1,5 @@
+<aura:component >
+	<aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+    <aura:attribute name="sri" type="Integer"></aura:attribute>
+     <lightning:button variant="base" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+</aura:component>

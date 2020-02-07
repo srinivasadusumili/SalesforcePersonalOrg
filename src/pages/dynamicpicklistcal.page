@@ -1,0 +1,17 @@
+<apex:page controller="dynamicpicklistcal" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:outputLabel value="Enter Number1: ">
+                <apex:inputText value="{!Number1}"/></apex:outputLabel><br/>
+            <apex:outputLabel value="Enter Number2: ">
+            <apex:inputText value="{!Number2}"/></apex:outputLabel><br/>
+            <apex:outputLabel value="List of Options: ">
+            <apex:selectList value="{!ValueSelected}">
+            <apex:selectOptions value="{!Values}"></apex:selectOptions>
+            <apex:actionSupport action="{!actionMethod}" event="onchange" />
+                </apex:selectList></apex:outputLabel><br/>
+            
+            The Answer is:<apex:outputText value="{!Result}"></apex:outputText>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

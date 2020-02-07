@@ -1,0 +1,9 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="Sum" type="Integer"></aura:attribute>
+    <lightning:input  name="First" aura:id="First" label="Enter First Value : " type="Number" />
+    <lightning:input  name="Second" aura:id="Second" label="Enter Second Value : " type="Number" />
+    <ui:Button label="Add Numbers" press="{!c.add}"/><br/><br/> 
+    <lightning:button label="Add Numbers1" onclick="{!c.add}" />
+    <lightning:input  name="Result" value="{!v.Sum}"/>
+    
+</aura:component>

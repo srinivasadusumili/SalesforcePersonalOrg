@@ -1,0 +1,38 @@
+<apex:page controller="SaveStudentDetails" >
+	<h1>StudentDetails</h1>
+	<apex:form >
+		<apex:pageMessages />
+		<table>
+			<tr>
+				<th>Your Name:</th>
+				<td><apex:inputText value="{!StudentName}"/></td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><apex:inputText value="{!Section}"/></td>
+			</tr>
+			<tr>
+				<th>Maths</th>
+				<td><apex:inputText required="true" value="{!Maths}"/></td>
+			</tr>
+			<tr>
+				<th>Physics</th>
+				<td><apex:inputText required="true" value="{!Physics}"/></td>
+			</tr>
+			<tr>
+				<th>Chemistry</th>
+				<td><apex:inputTextArea required="true" rows="5" value="{!Chemistry}"/></td>
+			</tr>
+            <tr>
+				<th>English</th>
+				<td><apex:inputTextArea required="true" rows="5" value="{!English}"/></td>
+			</tr>
+			<tr>
+				<td><apex:commandButton value="SaveDetails" action="{!SaveDetails}"/></td>
+			</tr>
+            <tr>
+                <td><apex:outputText value="{!result.result__c}"/> </td>
+            </tr>
+		</table>
+	</apex:form>
+</apex:page>

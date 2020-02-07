@@ -1,0 +1,9 @@
+<apex:page controller="actionregiontask" >
+    <apex:form >
+    <apex:outputLabel value="List of Options: ">
+            <apex:selectList value="{!ValueSelected}">
+            <apex:selectOptions value="{!Values}"></apex:selectOptions>
+            <apex:actionSupport event="onchange" />
+                </apex:selectList></apex:outputLabel>
+    </apex:form>
+</apex:page>

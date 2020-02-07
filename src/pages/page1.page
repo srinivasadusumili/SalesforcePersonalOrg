@@ -1,0 +1,17 @@
+<apex:page controller="pagereftask">
+    <apex:form >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        AccountName <apex:inputText value="{!acname}"/>
+        
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+        <apex:commandButton value="next" action="{!page}"/>
+        
+        
+        </apex:pageBlockButtons>
+    
+    </apex:pageBlock>
+    </apex:form>
+    
+</apex:page>

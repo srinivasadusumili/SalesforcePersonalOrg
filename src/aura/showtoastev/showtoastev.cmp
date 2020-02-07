@@ -1,0 +1,4 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId,lightning:isUrlAddressable" >
+	  <lightning:button label="demooooo" onclick="{!c.showToast}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"/>
+</aura:component>

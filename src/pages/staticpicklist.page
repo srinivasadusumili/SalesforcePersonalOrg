@@ -1,0 +1,15 @@
+<apex:page standardController="account">
+    
+  <apex:form >
+      
+      <apex:pageBlock >
+    <apex:pageBlockSection title="My Content Section" columns="2">
+                
+                <apex:inputField value="{!account.name}"/>
+                <apex:inputField value="{!account.industry}"/>
+            </apex:pageBlockSection>
+    </apex:pageBlock>
+      
+  </apex:form>
+ 
+</apex:page>

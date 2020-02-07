@@ -1,0 +1,19 @@
+<apex:page controller="pagereftask" >
+     <apex:form >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        AccountName <apex:outputText value="{!acname}"/>
+        ContactName <apex:inputText value="{!cname}"/>
+        </apex:pageBlockSection>
+        <apex:pageBlockButtons >
+        <apex:commandButton value="save" action="{!save}"/>
+            <apex:commandButton value="previous" action="{!previous1}"/>
+        
+        
+        </apex:pageBlockButtons>
+    
+    </apex:pageBlock>
+    </apex:form>
+    
+
+</apex:page>

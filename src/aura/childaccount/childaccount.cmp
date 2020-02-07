@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:attribute name="newItem" type="String"/>  
+    <aura:registerEvent name="addaccount" type="c:addaccountevent"/>
+    <form class="slds-form--stacked">          
+            <lightning:input aura:id="itemform"
+                             name="Itemname"
+                             value="{!v.newItem}"
+                             /> 
+        <lightning:button label="Add account" 
+                              class="slds-m-top--medium"
+                              variant="brand"
+                          onclick="{!c.clickCreateaccount}"/>
+        </form>
+	
+</aura:component>

@@ -1,0 +1,6 @@
+<apex:page >
+<apex:outputText style="font-style:italic" value="This is text wit{0} h iuuui{1}."> 
+<apex:param value="my"/> 
+ <apex:param value="arguments"/>
+ </apex:outputText>
+ </apex:page>

@@ -1,0 +1,48 @@
+<apex:page controller="pradeeptask" >
+    <apex:form >
+    <apex:pageBlock >
+                
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:outputLabel value="Value Of A" for="theName"/>
+<apex:inputtext value="{!avalue}"/>
+            </apex:pageBlockSection>
+             <apex:pageBlockSection >
+                <apex:outputLabel value="Value Of B" for="theName"/>
+<apex:inputtext value="{!bvalue}"/>
+                 
+            </apex:pageBlockSection>
+            </apex:pageBlock>
+        <apex:pageBlockSection >
+        <apex:selectList >
+        <apex:selectOption itemLabel="add" itemValue="hot" >
+             
+            </apex:selectOption>
+            //<apex:actionSupport event="onclick" action="{!add}" reRender="result" />
+           
+            
+            
+            <apex:selectOption itemLabel="sub" itemValue="cold" >
+               
+            </apex:selectOption>
+             <apex:actionSupport event="onchange" action="{!sub}" reRender="result"/>
+            
+            
+        
+        </apex:selectList>
+            
+        
+        </apex:pageBlockSection>
+        
+       <apex:pageBlockSection id="result" >
+            THE RESULT IS<apex:outputText value="{!result}"></apex:outputText> 
+        </apex:pageBlockSection>
+    
+    
+    
+    
+    </apex:pageBlock>
+    
+    </apex:form>
+ 
+</apex:page>

@@ -1,0 +1,11 @@
+<apex:page showHeader="false" >
+    <div style = "width:50%">
+        <h2>
+            Image as a static resource
+        </h2>
+        <apex:image url="{!$Resource.bullhornlogo}"/>
+        
+    </div>
+    
+    
+</apex:page>

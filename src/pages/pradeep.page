@@ -1,0 +1,25 @@
+<apex:page controller="searchrecords">
+    <apex:form >
+    <apex:pageBlock rendered="{!pb1}" >
+    <apex:pageBlockSection >
+        
+     Input Text1 <apex:inputText value="{!inputText1}"/>
+  
+
+    <apex:commandButton value="save" action="{!check}" />
+   
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock rendered="{!display}"  >
+        <apex:PageBlockSection id="pb"  >
+          <apex:dataTable value="{!inputText2}" var="a">
+      <apex:column value="{!a.industry}" />
+      <apex:column value="{!a.Name}" />
+  </apex:dataTable>
+        
+        </apex:PageBlockSection>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

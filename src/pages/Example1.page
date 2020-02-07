@@ -1,0 +1,25 @@
+<apex:page controller="Example1" >
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Enter the avalue</apex:outputLabel>
+                <apex:inputText value="{!avalue}"></apex:inputText>
+            </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+            <apex:outputLabel >Enter the bvalue</apex:outputLabel>
+                <apex:inputText value="{!bvalue}"></apex:inputText>
+            </apex:pageBlockSectionItem>
+                            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!add}" value="add"/>
+                <apex:commandButton action="{!sub}" value="sub"/>
+            </apex:pageBlockButtons>
+            THE RESULT IS<apex:outputText value="{!result}"></apex:outputText> 
+
+        </apex:pageBlock>    
+    </apex:form>
+    
+</apex:page>

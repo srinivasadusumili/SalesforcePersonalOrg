@@ -1,0 +1,6 @@
+<aura:component >
+	<div class="slds-border__top hw__border">Hello World</div>
+    <div class="slds-box">Hello World</div>
+    <div class="slds-dl__inline">Hello World</div>
+    
+</aura:component>

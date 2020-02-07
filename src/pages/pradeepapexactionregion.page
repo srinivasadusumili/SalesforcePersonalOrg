@@ -1,0 +1,11 @@
+<apex:page controller="pradeepaction" >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        
+        
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    
+    
+    
+</apex:page>

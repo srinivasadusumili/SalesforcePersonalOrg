@@ -1,0 +1,7 @@
+<aura:component>
+    <!--START BODY-->
+    <div>Body part</div>
+    <lightning:button label="Push Me" onclick="{!c.doSomething}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doinit}"></aura:handler>
+    <!--END BODY-->
+</aura:component>
